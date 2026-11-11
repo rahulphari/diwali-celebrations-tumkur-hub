@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Diwali Celebrations at Tumkur Hub — Delhivery Tumkur_Thimmalapura_H</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Karla:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+  button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]) { min-height: 2.25rem; }
+  * { box-sizing: border-box; }
+  :root{
+    --bg:#FFF8EC; --bg2:#FFF1D6; --surface:#FFFFFF; --surface2:#FFF6E3;
+    --ink:#2B1608; --ink-soft:#6B4A2E; --ink-faint:#8A6A4E;
+    --marigold:#E8860B; --marigold-deep:#C96A00; --gold:#E9B949; --gold-soft:#F6D97E;
+    --leaf:#2E7D32; --leaf-deep:#1E5621; --kumkum:#B3271E; --kumkum-deep:#8C1D16;
+    --night:#22100A; --night2:#33180C;
+    --line:rgba(120,66,12,.18);
+    --shadow:0 10px 30px rgba(90,45,0,.14);
+    --radius:18px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1D0F08; --bg2:#28150A; --surface:#2E1A0E; --surface2:#38220F;
+      --ink:#FBEED3; --ink-soft:#E4C9A0; --ink-faint:#B99A70;
+      --line:rgba(246,217,126,.22);
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+  }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:var(--marigold-deep); }
+  .wrap{ max-width:1120px; margin:0 auto; padding:0 20px; }
+
+  /* ---------- Toranam (marigold garland strip) ---------- */
+  .toranam{ background:var(--night); padding:10px 0 4px; overflow:hidden; }
+  .toranam svg{ display:block; width:100%; height:44px; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:var(--night); color:#FBEED3; position:relative; overflow:hidden;
+  }
+  #embers{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none; opacity:.9; }
+  .hero-inner{ position:relative; z-index:2; padding:44px 0 0; text-align:center; }
+  .hero-kicker{
+    display:inline-flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:center;
+    font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; color:var(--gold-soft);
+  }
+  .hero-kicker::before,.hero-kicker::after{ content:""; width:34px; height:2px; background:var(--marigold); border-radius:2px; }
+  .hero h1{
+    font-family:"Rozha One", serif; font-weight:400;
+    font-size:clamp(2.5rem, 7.5vw, 4.6rem); line-height:1.08; margin:.35em 0 .15em;
+    color:#FFF3D6;
+  }
+  .hero h1 .accent{ color:var(--gold); }
+  .hero-sub{ max-width:640px; margin:0 auto; color:#EFD9AE; font-size:1.08rem; }
+  .hero-meta{
+    display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:22px 0 6px;
+  }
+  .chip{
+    background:rgba(255,243,214,.08); border:1px solid rgba(246,217,126,.35); color:#FBEED3;
+    padding:8px 14px; border-radius:999px; font-size:.9rem; font-weight:700;
+  }
+  .chip b{ color:var(--gold); }
+  .hero-photo{
+    position:relative; z-index:2; max-width:1020px; margin:28px auto 0; padding:0 20px;
+  }
+  .hero-photo figure{
+    margin:0; border-radius:22px 22px 0 0; overflow:hidden; border:6px solid rgba(246,217,126,.25); border-bottom:none;
+    box-shadow:0 -10px 60px rgba(0,0,0,.45);
+  }
+  .hero-photo img{ width:100%; aspect-ratio:16/8.2; object-fit:cover; object-position:center 38%; }
+  .hero-caption{
+    background:var(--night2); color:#EFD9AE; font-size:.92rem; padding:12px 18px; text-align:center;
+    border-top:1px solid rgba(246,217,126,.2);
+  }
+  .hero-caption .hand{ font-family:"Caveat", cursive; font-size:1.25rem; color:var(--gold-soft); }
+
+  /* ---------- Light a diya ---------- */
+  .diya-band{ background:var(--night2); color:#FBEED3; padding:8px 0 30px; }
+  .diya-band .wrap{ text-align:center; }
+  .diya-band p{ margin:6px 0 14px; color:#EFD9AE; font-size:.98rem; }
+  .diya-band p b{ color:var(--gold-soft); }
+  .diyas{ display:flex; justify-content:center; gap:clamp(6px,2.5vw,22px); flex-wrap:wrap; }
+  .diya{
+    background:none; border:none; cursor:pointer; padding:8px 6px; min-width:56px; min-height:56px;
+    display:flex; flex-direction:column; align-items:center; gap:2px;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .diya svg{ width:52px; height:44px; }
+  .diya .flame{ opacity:0; transform-origin:50% 90%; transform:scale(.4); transition:opacity .35s ease, transform .35s ease; }
+  .diya .glow{ opacity:0; transition:opacity .4s ease; }
+  .diya.lit .flame{ opacity:1; transform:scale(1); animation:flicker 1.6s ease-in-out infinite alternate; }
+  .diya.lit .glow{ opacity:.85; }
+  @keyframes flicker{ from{ transform:scale(1) rotate(-2deg);} to{ transform:scale(1.08) rotate(2deg);} }
+  @media (prefers-reduced-motion: reduce){ .diya.lit .flame{ animation:none; } }
+  .diya small{ color:#C9A66B; font-size:.68rem; font-weight:700; letter-spacing:.06em; }
+  .diya-count{ font-family:"Caveat", cursive; font-size:1.5rem; color:var(--gold-soft); min-height:1.6em; margin-top:8px; }
+
+  /* ---------- Sections ---------- */
+  section{ padding:56px 0 8px; }
+  .sec-head{ max-width:720px; margin-bottom:26px; }
+  .sec-num{
+    display:inline-block; font-weight:800; font-size:.8rem; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--kumkum); background:color-mix(in srgb, var(--kumkum) 10%, transparent);
+    padding:5px 12px; border-radius:999px; margin-bottom:12px;
+  }
+  h2{ font-family:"Rozha One", serif; font-weight:400; font-size:clamp(1.8rem,4.5vw,2.6rem); line-height:1.15; margin:0 0 10px; }
+  h3{ font-family:"Rozha One", serif; font-weight:400; font-size:1.35rem; margin:0 0 8px; line-height:1.25; }
+  .sec-head p, .lede{ color:var(--ink-soft); font-size:1.05rem; margin:0; }
+  .lede{ max-width:760px; font-size:1.13rem; }
+  .lede strong{ color:var(--ink); }
+
+  /* Story rows */
+  .story{ display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:center; margin:38px 0; }
+  .story.flip .story-media{ order:2; }
+  .story-media{ border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line); }
+  .story-media img{ width:100%; height:100%; object-fit:cover; aspect-ratio:4/4.6; }
+  .story-media.wide img{ aspect-ratio:16/10.5; }
+  .story-text p{ color:var(--ink-soft); margin:0 0 14px; }
+  .story-text p strong{ color:var(--ink); }
+  .pull{
+    font-family:"Caveat", cursive; font-size:1.65rem; line-height:1.3; color:var(--marigold-deep);
+    border-left:4px solid var(--gold); padding:4px 0 4px 16px; margin:18px 0 4px;
+  }
+  @media (prefers-color-scheme: dark){ .pull{ color:var(--gold-soft); } }
+  .tagrow{ display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .tag{ font-size:.8rem; font-weight:800; padding:5px 11px; border-radius:999px; background:var(--surface2); border:1px solid var(--line); color:var(--ink-soft); }
+
+  /* Rangoli divider */
+  .rangoli{ display:flex; align-items:center; gap:14px; margin:44px auto 0; max-width:1120px; padding:0 20px; }
+  .rangoli::before,.rangoli::after{ content:""; flex:1; height:2px; background:repeating-linear-gradient(90deg, var(--marigold) 0 10px, transparent 10px 18px); opacity:.55; }
+  .rangoli span{ font-size:1.3rem; }
+
+  /* Timeline */
+  .timeline{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:8px; }
+  .step{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px 18px;
+    box-shadow:var(--shadow); position:relative;
+  }
+  .step .n{
+    width:40px; height:40px; border-radius:50%; display:grid; place-items:center; font-weight:800; color:#fff;
+    background:var(--marigold); margin-bottom:12px; font-size:1.05rem;
+  }
+  .step:nth-child(2) .n{ background:var(--kumkum); }
+  .step:nth-child(3) .n{ background:var(--leaf); }
+  .step:nth-child(4) .n{ background:var(--marigold-deep); }
+  .step h3{ font-size:1.12rem; }
+  .step p{ margin:0; color:var(--ink-soft); font-size:.95rem; }
+
+  /* Gallery */
+  .filters{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px; }
+  .filter-btn{
+    border:2px solid var(--line); background:var(--surface); color:var(--ink); font:inherit; font-weight:800; font-size:.92rem;
+    padding:9px 18px; border-radius:999px; cursor:pointer; min-height:44px;
+  }
+  .filter-btn[aria-pressed="true"]{ background:var(--night); color:#FBEED3; border-color:var(--night); }
+  @media (prefers-color-scheme: dark){ .filter-btn[aria-pressed="true"]{ background:var(--gold); color:#2B1608; border-color:var(--gold); } }
+  .gallery{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .g-item{
+    border:none; padding:0; margin:0; cursor:pointer; border-radius:14px; overflow:hidden; position:relative;
+    box-shadow:var(--shadow); background:var(--surface); min-height:44px;
+  }
+  .g-item img{ width:100%; height:100%; object-fit:cover; aspect-ratio:4/3; transition:transform .35s ease; }
+  .g-item:hover img, .g-item:focus-visible img{ transform:scale(1.045); }
+  .g-item figcaption{
+    position:absolute; left:0; right:0; bottom:0; padding:26px 12px 10px; text-align:left;
+    background:linear-gradient(transparent, rgba(20,8,2,.82)); color:#FFF3D6; font-size:.85rem; font-weight:700;
+  }
+  .g-item[hidden]{ display:none; }
+  @media (prefers-reduced-motion: reduce){ .g-item img{ transition:none; } .g-item:hover img{ transform:none; } }
+
+  /* Videos */
+  .reels{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .reel{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);
+  }
+  .reel video{ width:100%; aspect-ratio:9/14; max-height:480px; object-fit:cover; background:#000; display:block; }
+  .reel.wide video{ aspect-ratio:16/10; }
+  .reel .cap{ padding:12px 16px 14px; }
+  .reel .cap b{ display:block; font-size:1rem; }
+  .reel .cap span{ color:var(--ink-soft); font-size:.9rem; }
+
+  /* Wishes */
+  .wishes{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .wish{
+    border-radius:var(--radius); padding:24px 22px; color:#FFF6E3; position:relative; overflow:hidden;
+  }
+  .wish:nth-child(1){ background:var(--kumkum-deep); }
+  .wish:nth-child(2){ background:var(--leaf-deep); }
+  .wish:nth-child(3){ background:var(--night2); }
+  .wish .hand{ font-family:"Caveat", cursive; font-size:1.7rem; line-height:1.25; display:block; margin-bottom:8px; color:var(--gold-soft); }
+  .wish p{ margin:0; font-size:.97rem; color:#F3E3C2; }
+
+  /* Footer */
+  footer{ margin-top:64px; background:var(--night); color:#EFD9AE; }
+  footer .wrap{ padding-top:38px; padding-bottom:38px; text-align:center; }
+  footer .big{ font-family:"Rozha One", serif; font-size:clamp(1.5rem,4vw,2.1rem); color:#FFF3D6; margin:0 0 8px; }
+  footer p{ margin:4px 0; font-size:.95rem; }
+  footer .small{ color:#B99A70; font-size:.85rem; margin-top:16px; }
+
+  /* Reveal */
+  .reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+
+  /* Lightbox */
+  .lightbox{
+    position:fixed; inset:0; z-index:60; background:rgba(12,5,2,.94); display:none;
+    flex-direction:column; align-items:center; justify-content:center; padding:18px;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-width:min(100%,980px); max-height:74vh; border-radius:12px; box-shadow:0 20px 60px rgba(0,0,0,.6); object-fit:contain; }
+  .lb-cap{ color:#FBEED3; margin:14px 0 4px; text-align:center; font-weight:700; max-width:640px; }
+  .lb-count{ color:#C9A66B; font-size:.85rem; font-weight:700; }
+  .lb-bar{ display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; justify-content:center; }
+  .lb-btn{
+    font:inherit; font-weight:800; cursor:pointer; border-radius:999px; min-height:46px; padding:10px 20px;
+    background:rgba(255,243,214,.1); color:#FBEED3; border:1px solid rgba(246,217,126,.45);
+  }
+  .lb-btn:hover{ background:rgba(255,243,214,.2); }
+
+  @media (max-width:860px){
+    .story{ grid-template-columns:1fr; gap:20px; }
+    .story.flip .story-media{ order:0; }
+    .story-media img{ aspect-ratio:16/11; }
+    .timeline{ grid-template-columns:1fr 1fr; }
+    .gallery{ grid-template-columns:1fr 1fr; }
+    .reels{ grid-template-columns:1fr 1fr; }
+    .wishes{ grid-template-columns:1fr; }
+  }
+  @media (max-width:520px){
+    .gallery{ grid-template-columns:1fr; }
+    .g-item img{ aspect-ratio:16/10; }
+    .reels{ grid-template-columns:1fr; }
+    .reel video{ max-height:560px; }
+    .timeline{ grid-template-columns:1fr; }
+    .hero-photo img{ aspect-ratio:4/3.4; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toranam" aria-hidden="true">
+  <svg viewBox="0 0 1200 44" preserveAspectRatio="none" focusable="false">
+    <path d="M0,2 Q150,34 300,8 T600,10 T900,6 T1200,12" fill="none" stroke="#2E7D32" stroke-width="3"/>
+    <g fill="#E8860B">
+      <circle cx="60" cy="14" r="6"/><circle cx="150" cy="22" r="6"/><circle cx="240" cy="15" r="6"/><circle cx="330" cy="12" r="6"/><circle cx="420" cy="16" r="6"/><circle cx="510" cy="13" r="6"/><circle cx="600" cy="15" r="6"/><circle cx="690" cy="12" r="6"/><circle cx="780" cy="15" r="6"/><circle cx="870" cy="11" r="6"/><circle cx="960" cy="13" r="6"/><circle cx="1050" cy="16" r="6"/><circle cx="1140" cy="14" r="6"/>
+    </g>
+    <g fill="#E9B949">
+      <circle cx="105" cy="19" r="4"/><circle cx="195" cy="16" r="4"/><circle cx="285" cy="12" r="4"/><circle cx="375" cy="14" r="4"/><circle cx="465" cy="12" r="4"/><circle cx="555" cy="14" r="4"/><circle cx="645" cy="12" r="4"/><circle cx="735" cy="14" r="4"/><circle cx="825" cy="12" r="4"/><circle cx="915" cy="13" r="4"/><circle cx="1005" cy="15" r="4"/><circle cx="1095" cy="13" r="4"/>
+    </g>
+    <g fill="#FFF3D6">
+      <circle cx="60" cy="24" r="3"/><circle cx="240" cy="25" r="3"/><circle cx="420" cy="26" r="3"/><circle cx="600" cy="25" r="3"/><circle cx="780" cy="25" r="3"/><circle cx="960" cy="23" r="3"/><circle cx="1140" cy="24" r="3"/>
+    </g>
+  </svg>
+</div>
+
+<header class="hero">
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="hero-inner wrap">
+    <span class="hero-kicker">Delhivery &middot; Tumkur_Thimmalapura_H</span>
+    <h1>Deepotsava at <span class="accent">Thimmalapura</span></h1>
+    <p class="hero-sub">For one bright morning, the sort lines paused, the cages stepped aside, and our hub became a home. This is the story of Diwali — celebrated where the work happens, with the people who make it happen.</p>
+    <div class="hero-meta">
+      <span class="chip">🪔 <b>Monday, 9 November 2026</b></span>
+      <span class="chip">📍 <b>Tumkur_Thimmalapura_H Hub</b></span>
+      <span class="chip">📸 <b>11 photos</b> &middot; 🎬 <b>6 reels</b></span>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <figure>
+      <img src="assets/photo-11.jpg" alt="The Tumkur hub team gathered in front of the Diwali pooja pandal inside the warehouse" />
+      <figcaption class="hero-caption">The whole parivaara, one frame. <span class="hand">— hub, FM, LM, PST &amp; security, together ✨</span></figcaption>
+    </figure>
+  </div>
+  <div class="diya-band">
+    <div class="wrap">
+      <p>Before you scroll — <b>tap the diyas and light them.</b> One for every shift that keeps this hub glowing, day and night.</p>
+      <div class="diyas" id="diyas" role="group" aria-label="Tap to light the diyas"></div>
+      <div class="diya-count" id="diyaCount" aria-live="polite">0 of 7 diyas lit — tap one to begin 🪔</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap" style="padding-top:48px;">
+    <p class="lede reveal">Every day, thousands of parcels pass through Thimmalapura — sorted, connected, delivered. But on <strong>Monday, 9 November</strong>, the most precious delivery was different: <strong>a red box of sweets, a bag of fruit, and a few unhurried minutes together.</strong> Banana stems went up at the bay, marigolds looped over a green silk backdrop, and right in the middle of the warehouse floor, the hub held its Diwali pooja.</p>
+  </section>
+
+  <div class="rangoli" aria-hidden="true"><span>✿</span></div>
+
+  <!-- CHAPTER 1 -->
+  <section class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">Chapter 01 · The Pooja</span>
+      <h2>A temple, right where the trucks dock</h2>
+      <p>No hall was booked and no stage was built. The team simply claimed a corner of the hub floor and made it sacred — the way this team does everything: together, and with whatever is at hand.</p>
+    </div>
+    <div class="story reveal">
+      <div class="story-media wide">
+        <img src="assets/photo-07.jpg" alt="Team members standing beside the pooja table decorated with marigold garlands, banana stems, bananas, fruits and offerings" loading="lazy" />
+      </div>
+      <div class="story-text">
+        <h3>Banana stems, marigold &amp; a green silk sky</h3>
+        <p>Two tall <strong>banana stems (baale kamba)</strong> framed the pandal, exactly as tradition asks. Over a green patterned silk cloth hung loops of <strong>yellow marigold and fresh green garlands</strong>, with little red blooms tucked in between.</p>
+        <p>On the black-draped table: bananas, apples, coconut, flowers and the pooja thali — and on the floor, the small brass lamps and steel tumblers of a ceremony done properly, shoes off, hearts in.</p>
+        <div class="pull">"Sort floor aaytu, sanctum aaytu — same floor, full bhakti!"</div>
+        <div class="tagrow"><span class="tag">🌼 Marigold toranam</span><span class="tag">🌿 Banana stems</span><span class="tag">🍌 Fruit offerings</span><span class="tag">🪔 Brass deepas</span></div>
+      </div>
+    </div>
+    <div class="story flip reveal">
+      <div class="story-media wide">
+        <img src="assets/photo-08.jpg" alt="Team members chatting and smiling around the pooja pandal during the celebration" loading="lazy" />
+      </div>
+      <div class="story-text">
+        <h3>Bare feet on the hub floor</h3>
+        <p>Look closely at every photo from the morning and you'll notice the same thing — <strong>everyone is barefoot</strong>. Inside the pooja space, designations stayed outside with the footwear. Team leads, executives, associates, security — one circle, no ranks.</p>
+        <p>Between the aarti and the photographs, there was laughter, teasing, and that particular hub-floor noise that no celebration can quite silence — nor would anyone want it to.</p>
+        <div class="tagrow"><span class="tag">🤝 No ranks inside the pandal</span><span class="tag">😄 Full masti</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rangoli" aria-hidden="true"><span>🪔</span></div>
+
+  <!-- CHAPTER 2 -->
+  <section class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">Chapter 02 · Sweets &amp; Smiles</span>
+      <h2>The sweetest handover of the season</h2>
+      <p>This hub hands over thousands of shipments a day. On Diwali, the handover that mattered was a bright red sweet box and a green bag of fruit — given by hand, received with both hands, and sealed with a photograph.</p>
+    </div>
+    <div class="story reveal">
+      <div class="story-media">
+        <img src="assets/photo-01.jpg" alt="A team member receiving a red box of Diwali sweets and a bag of fruit in front of the pooja pandal" loading="lazy" />
+      </div>
+      <div class="story-text">
+        <h3>One box, one bag, one big smile at a time</h3>
+        <p>One by one, every member of the team stepped up to the pandal to receive their <strong>Diwali sweet box and fruit bag</strong>. Each handover got its own moment — a handshake, a grin for the camera, and the pooja backdrop glowing behind them.</p>
+        <p>It is a small ritual, but it carries a big message that this hub runs on: <strong>nobody here is just a headcount.</strong> Every person who sorts, drives, guards, solves and supervises through the year was called up by turn and celebrated.</p>
+        <div class="pull">"Parcel delivery daily ide… sweet box delivery, swalpa special!"</div>
+        <div class="tagrow"><span class="tag">🎁 Sweet boxes for all</span><span class="tag">🍎 Fruit bags</span><span class="tag">📷 A photo for everyone</span></div>
+      </div>
+    </div>
+    <div class="story flip reveal">
+      <div class="story-media">
+        <img src="assets/photo-06.jpg" alt="Two team members exchanging a Diwali sweet box on the hub floor near the decorated pallet jack" loading="lazy" />
+      </div>
+      <div class="story-text">
+        <h3>Even the pallet jack got dressed up</h3>
+        <p>Only at Thimmalapura would the <strong>hand pallet truck wear marigolds</strong> for the occasion — decorated and parked right beside the pandal like an honoured guest. The tools of the trade were part of the pooja too, blessed for another year of safe, smooth runs.</p>
+        <p>Petals scattered across the concrete, the smell of flowers mixing with the everyday hub air — for a few hours, the warehouse smelled like a festival, because it was one.</p>
+        <div class="tagrow"><span class="tag">🏵️ Ayudha pooja spirit</span><span class="tag">🚚 Tools blessed too</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rangoli" aria-hidden="true"><span>✿</span></div>
+
+  <!-- TIMELINE -->
+  <section class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">How the morning unfolded</span>
+      <h2>From empty floor to full house</h2>
+    </div>
+    <div class="timeline">
+      <div class="step reveal"><div class="n">1</div><h3>The setup</h3><p>Banana stems raised, silk backdrop hung, marigold garlands looped — the pandal rises on the hub floor.</p></div>
+      <div class="step reveal"><div class="n">2</div><h3>The pooja</h3><p>Fruits, flowers and lamps arranged; the team gathers barefoot for the Diwali pooja and aarti.</p></div>
+      <div class="step reveal"><div class="n">3</div><h3>The giving</h3><p>Sweet boxes and fruit bags handed over one by one — every handover with a smile and a snapshot.</p></div>
+      <div class="step reveal"><div class="n">4</div><h3>The family photo</h3><p>Everyone squeezes into frame — group after group — until the whole hub has been captured together.</p></div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 3 -->
+  <section class="wrap">
+    <div class="sec-head reveal" style="margin-top:26px;">
+      <span class="sec-num">Chapter 03 · One Parivaara</span>
+      <h2>Shifts change. This family doesn't.</h2>
+      <p>A, B and C shifts. Hub, FM and LM. PST solving problems in the corner, security watching over it all. Diwali was the rare morning the whole parivaara stood in one place at one time — and the camera could barely fit everyone in.</p>
+    </div>
+    <div class="story reveal">
+      <div class="story-media wide">
+        <img src="assets/photo-12.jpg" alt="A large group of hub team members posing together in front of the pooja pandal" loading="lazy" />
+      </div>
+      <div class="story-text">
+        <h3>Twenty smiles, one frame, zero space left</h3>
+        <p>The big group photos say everything: rows of teammates shoulder to shoulder, a couple crouched in front, the pandal peeking out from behind. This is the crew that keeps Tumkur's parcels moving through peak season, rain, and 2 AM connects alike.</p>
+        <p>Festivals at a 24×7 hub are never easy to pull off — someone is always on shift, someone always on the road. That this many people could gather, dress up, and celebrate together is its own small Diwali miracle.</p>
+        <div class="pull">"A shift, B shift, C shift — Diwali ge ella ondu shift!"</div>
+        <div class="tagrow"><span class="tag">🏭 Hub</span><span class="tag">🚐 FM &amp; LM</span><span class="tag">🧩 PST</span><span class="tag">🛡️ Security</span><span class="tag">🕐 24×7, one family</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rangoli" aria-hidden="true"><span>🪔</span></div>
+
+  <!-- GALLERY -->
+  <section class="wrap" id="gallery">
+    <div class="sec-head reveal">
+      <span class="sec-num">The Album</span>
+      <h2>Every frame from the floor</h2>
+      <p>All eleven photographs from the celebration. Tap any photo to view it large, and use the arrows to walk through the morning.</p>
+    </div>
+    <div class="filters reveal" role="group" aria-label="Filter photos">
+      <button class="filter-btn" data-filter="all" aria-pressed="true">All photos · 11</button>
+      <button class="filter-btn" data-filter="gifts" aria-pressed="false">Sweet handovers · 6</button>
+      <button class="filter-btn" data-filter="groups" aria-pressed="false">Team frames · 5</button>
+    </div>
+    <div class="gallery" id="galleryGrid"></div>
+  </section>
+
+  <div class="rangoli" aria-hidden="true"><span>✿</span></div>
+
+  <!-- VIDEOS -->
+  <section class="wrap" id="reels">
+    <div class="sec-head reveal">
+      <span class="sec-num">Moving Memories</span>
+      <h2>The reels — press play, relive it</h2>
+      <p>Six short clips shot on the hub floor during the celebration. Tap play on any reel — sound on for the full festive noise!</p>
+    </div>
+    <div class="reels">
+      <div class="reel reveal"><video src="assets/video-5.mp4" controls playsinline preload="metadata"></video><div class="cap"><b>Reel 1 · The long take 🎬</b><span>The fullest capture of the celebration — 35 seconds on the floor.</span></div></div>
+      <div class="reel reveal"><video src="assets/video-4.mp4" controls playsinline preload="metadata"></video><div class="cap"><b>Reel 2 · Pandal moments</b><span>24 seconds around the pooja and the gathering.</span></div></div>
+      <div class="reel reveal"><video src="assets/video-2.mp4" controls playsinline preload="metadata"></video><div class="cap"><b>Reel 3 · Smiles on loop</b><span>23 seconds of handovers, laughter and posing.</span></div></div>
+      <div class="reel reveal"><video src="assets/video-6.mp4" controls playsinline preload="metadata"></video><div class="cap"><b>Reel 4 · The team assembles</b><span>22 seconds as everyone crowds in for the group frames.</span></div></div>
+      <div class="reel reveal"><video src="assets/video-1.mp4" controls playsinline preload="metadata"></video><div class="cap"><b>Reel 5 · A quick spark ✨</b><span>A 7-second glimpse of the festive floor.</span></div></div>
+      <div class="reel wide reveal"><video src="assets/video-3.mp4" controls playsinline preload="metadata"></video><div class="cap"><b>Reel 6 · Wide angle</b><span>The celebration in landscape — the hub in full festive mode.</span></div></div>
+    </div>
+  </section>
+
+  <div class="rangoli" aria-hidden="true"><span>🪔</span></div>
+
+  <!-- WISHES -->
+  <section class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">With Love, From the Hub</span>
+      <h2>Wishes that travel further than any parcel</h2>
+    </div>
+    <div class="wishes">
+      <div class="wish reveal"><span class="hand">Deepavali Habbada Shubhashayagalu! 🪔</span><p>Happy Diwali to every member of the Thimmalapura family and to yours at home — may your year be sorted, connected and delivered on time, just like our best runs.</p></div>
+      <div class="wish reveal"><span class="hand">Belaku nimma manege, nemmadi nimma manasige ✨</span><p>Light for your home, peace for your heart. Thank you for bringing your energy to this hub through peak season and beyond — you are the reason this place glows.</p></div>
+      <div class="wish reveal"><span class="hand">Ondu team, ondu parivaara 💛</span><p>To the night shift that never sees the morning pooja and the drivers who celebrate on the road — this page carries the festival to you, wherever this finds you.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="big">🪔 Happy Diwali from Tumkur_Thimmalapura_H 🪔</p>
+    <p>Delhivery · Hub Operations · Tumkur, Karnataka</p>
+    <p>Celebrated on Monday, 9 November 2026 — pooja, sweets, fruit bags and one very full family photograph.</p>
+    <p class="small">Made with the team's own photos &amp; videos from the day · Deepotsava at Thimmalapura · 2026</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <img id="lbImg" alt="" />
+  <div class="lb-cap" id="lbCap"></div>
+  <div class="lb-count" id="lbCount"></div>
+  <div class="lb-bar">
+    <button class="lb-btn" id="lbPrev">← Prev</button>
+    <button class="lb-btn" id="lbClose">Close ✕</button>
+    <button class="lb-btn" id="lbNext">Next →</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Gallery data ---------- */
+  var PHOTOS = [
+    {src:"assets/photo-11.jpg", cat:"groups", cap:"The whole parivaara in one frame", alt:"The Tumkur hub team gathered in front of the Diwali pooja pandal inside the warehouse"},
+    {src:"assets/photo-12.jpg", cat:"groups", cap:"Twenty smiles, zero space left", alt:"A large group of hub team members posing together in front of the pooja pandal"},
+    {src:"assets/photo-07.jpg", cat:"groups", cap:"By the pandal, in festive best", alt:"Team members standing beside the pooja table decorated with marigold garlands and offerings"},
+    {src:"assets/photo-10.jpg", cat:"groups", cap:"All smiles before the sweets round", alt:"Team members standing together in front of the pooja pandal"},
+    {src:"assets/photo-08.jpg", cat:"groups", cap:"Candid — mid-laugh, mid-celebration", alt:"Team members chatting and smiling around the pooja pandal during the celebration"},
+    {src:"assets/photo-01.jpg", cat:"gifts", cap:"Sweet box handover No. 1", alt:"A team member receiving a red box of Diwali sweets and a bag of fruit in front of the pooja pandal"},
+    {src:"assets/photo-02.jpg", cat:"gifts", cap:"Sweet box handover No. 2", alt:"A team member receiving Diwali sweets and a fruit bag at the pandal"},
+    {src:"assets/photo-03.jpg", cat:"gifts", cap:"Sweet box handover No. 3", alt:"Two team members exchanging a red Diwali sweet box at the pandal"},
+    {src:"assets/photo-04.jpg", cat:"gifts", cap:"Sweet box handover No. 4", alt:"A team member receiving a sweet box and fruit bag in front of the garlanded backdrop"},
+    {src:"assets/photo-05.jpg", cat:"gifts", cap:"Sweet box handover No. 5", alt:"A team member in a purple shirt receiving Diwali sweets and fruit at the pandal"},
+    {src:"assets/photo-06.jpg", cat:"gifts", cap:"Sweet box handover No. 6 — by the marigold pallet jack", alt:"Two team members exchanging a Diwali sweet box on the hub floor near the decorated pallet jack"}
+  ];
+
+  var grid = document.getElementById("galleryGrid");
+  PHOTOS.forEach(function(p, i){
+    var btn = document.createElement("button");
+    btn.className = "g-item reveal";
+    btn.setAttribute("data-cat", p.cat);
+    btn.setAttribute("data-idx", i);
+    btn.setAttribute("aria-label", "View photo: " + p.cap);
+    var img = document.createElement("img");
+    img.src = p.src; img.alt = p.alt; img.loading = "lazy";
+    var cap = document.createElement("figcaption");
+    cap.textContent = p.cap;
+    var fig = document.createElement("figure");
+    fig.style.margin = "0"; fig.style.height = "100%";
+    fig.appendChild(img); fig.appendChild(cap);
+    btn.appendChild(fig);
+    grid.appendChild(btn);
+  });
+
+  /* ---------- Filters ---------- */
+  var filterBtns = document.querySelectorAll(".filter-btn");
+  filterBtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      filterBtns.forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+      b.setAttribute("aria-pressed","true");
+      var f = b.getAttribute("data-filter");
+      document.querySelectorAll(".g-item").forEach(function(item){
+        item.hidden = !(f === "all" || item.getAttribute("data-cat") === f);
+      });
+    });
+  });
+
+  /* ---------- Lightbox ---------- */
+  var lb = document.getElementById("lightbox"),
+      lbImg = document.getElementById("lbImg"),
+      lbCap = document.getElementById("lbCap"),
+      lbCount = document.getElementById("lbCount"),
+      current = 0, lastFocus = null;
+
+  function visibleList(){
+    return PHOTOS.map(function(p,i){ return {p:p,i:i}; })
+      .filter(function(o){ var el = grid.children[o.i]; return el && !el.hidden; });
+  }
+  function show(idx){
+    current = idx;
+    var p = PHOTOS[idx];
+    lbImg.src = p.src; lbImg.alt = p.alt;
+    lbCap.textContent = p.cap;
+    var list = visibleList();
+    var pos = list.findIndex(function(o){ return o.i === idx; });
+    lbCount.textContent = "Photo " + (pos+1) + " of " + list.length + " shown · " + (idx+1) + " of " + PHOTOS.length + " total";
+  }
+  function step(dir){
+    var list = visibleList(); if(!list.length) return;
+    var pos = list.findIndex(function(o){ return o.i === current; });
+    var next = list[(pos + dir + list.length) % list.length];
+    show(next.i);
+  }
+  function openLb(idx, el){
+    lastFocus = el || document.activeElement;
+    show(idx);
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+    document.getElementById("lbClose").focus();
+  }
+  function closeLb(){
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+    if(lastFocus) lastFocus.focus();
+  }
+  grid.addEventListener("click", function(e){
+    var item = e.target.closest(".g-item");
+    if(item) openLb(parseInt(item.getAttribute("data-idx"),10), item);
+  });
+  document.getElementById("lbClose").addEventListener("click", closeLb);
+  document.getElementById("lbPrev").addEventListener("click", function(){ step(-1); });
+  document.getElementById("lbNext").addEventListener("click", function(){ step(1); });
+  lb.addEventListener("click", function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if(!lb.classList.contains("open")) return;
+    if(e.key === "Escape") closeLb();
+    if(e.key === "ArrowLeft") step(-1);
+    if(e.key === "ArrowRight") step(1);
+  });
+
+  /* ---------- Diyas ---------- */
+  var diyaWrap = document.getElementById("diyas");
+  var diyaCount = document.getElementById("diyaCount");
+  var wishes = [
+    "for the A shift, fresh at 8 AM ☀️",
+    "for the B shift, holding the afternoon 💪",
+    "for the C shift, glowing through the night 🌙",
+    "for FM & LM, on every road 🛣️",
+    "for PST, solving the unsolvable 🧩",
+    "for Security, watching over us all 🛡️",
+    "for every family waiting at home 💛"
+  ];
+  var litCount = 0;
+  function diyaSVG(){
+    return '<svg viewBox="0 0 64 48" aria-hidden="true">'
+      + '<ellipse class="glow" cx="32" cy="14" rx="16" ry="12" fill="#FFC94D"/>'
+      + '<path class="flame" d="M32 2 C36 8 38 11 38 15 a6 6 0 1 1 -12 0 C26 11 28 8 32 2 Z" fill="#FFB020"/>'
+      + '<path class="flame" d="M32 8 C34 11 35 13 35 15.5 a3 3 0 1 1 -6 0 C29 13 30 11 32 8 Z" fill="#FFE9A8"/>'
+      + '<path d="M8 26 Q32 40 56 26 L52 34 Q32 46 12 34 Z" fill="#B3541E"/>'
+      + '<path d="M8 26 Q32 38 56 26 Q32 32 8 26 Z" fill="#8C3A12"/>'
+      + '<circle cx="20" cy="31" r="1.6" fill="#E9B949"/><circle cx="32" cy="34" r="1.6" fill="#E9B949"/><circle cx="44" cy="31" r="1.6" fill="#E9B949"/>'
+      + '</svg>';
+  }
+  for(var d = 0; d < 7; d++){
+    (function(i){
+      var b = document.createElement("button");
+      b.className = "diya";
+      b.setAttribute("aria-pressed","false");
+      b.setAttribute("aria-label", "Light diya " + (i+1) + " " + wishes[i]);
+      b.innerHTML = diyaSVG() + "<small>DIYA " + (i+1) + "</small>";
+      b.addEventListener("click", function(){
+        var lit = b.classList.toggle("lit");
+        b.setAttribute("aria-pressed", lit ? "true" : "false");
+        litCount += lit ? 1 : -1;
+        if(litCount === 7){
+          diyaCount.textContent = "All 7 diyas lit! ✨ Deepavali Habbada Shubhashayagalu, Thimmalapura! 🪔";
+        } else if(litCount === 0){
+          diyaCount.textContent = "0 of 7 diyas lit — tap one to begin 🪔";
+        } else {
+          diyaCount.textContent = litCount + " of 7 diyas lit — last one " + wishes[i];
+        }
+      });
+      diyaWrap.appendChild(b);
+    })(d);
+  }
+
+  /* ---------- Ember particles ---------- */
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var canvas = document.getElementById("embers");
+  if(canvas && !reduceMotion){
+    var ctx = canvas.getContext("2d"), W, H, parts = [];
+    function resize(){
+      W = canvas.width = canvas.offsetWidth;
+      H = canvas.height = canvas.offsetHeight;
+    }
+    resize(); window.addEventListener("resize", resize);
+    for(var i = 0; i < 42; i++){
+      parts.push({ x: Math.random(), y: Math.random(), r: 1 + Math.random()*2.2, s: .12 + Math.random()*.35, drift: (Math.random()-.5)*.15, a: .25 + Math.random()*.55 });
+    }
+    (function tick(){
+      ctx.clearRect(0,0,W,H);
+      parts.forEach(function(p){
+        p.y -= p.s / H * 1.4; p.x += p.drift / W;
+        if(p.y < -0.02){ p.y = 1.02; p.x = Math.random(); }
+        var flick = .75 + Math.sin(Date.now()/300 + p.x*20) * .25;
+        ctx.beginPath();
+        ctx.arc(p.x*W, p.y*H, p.r, 0, Math.PI*2);
+        ctx.fillStyle = "rgba(255,190,70," + (p.a*flick).toFixed(3) + ")";
+        ctx.fill();
+      });
+      requestAnimationFrame(tick);
+    })();
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = document.querySelectorAll(".reveal");
+  function revealAll(){ revealEls.forEach(function(el){ el.classList.add("in"); }); }
+  if("IntersectionObserver" in window && !reduceMotion){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: .05, rootMargin: "0px 0px 12% 0px" });
+    revealEls.forEach(function(el){ io.observe(el); });
+    /* Safety net: content must never stay hidden (full-page captures, no-scroll readers) */
+    setTimeout(revealAll, 2200);
+    window.addEventListener("load", function(){ setTimeout(revealAll, 2600); });
+  } else {
+    revealAll();
+  }
+})();
+</script>
+</body>
+</html>
